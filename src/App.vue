@@ -14,7 +14,6 @@ export default {
     HelloWorld
   }
 }
-</script>
 
 <style>
 #app {
