@@ -1,8 +1,21 @@
-import Vue from 'vue'
-import App from './App.vue'
+// import { createApp } from "vue";
+// import App from "./App.vue";
+// import router from "./router";
+// // Vue.config.productionTip = false;
+// createApp(App).use(router).mount("#app");
+// Not available in Vue 2
+import Vue from "vue";
+import VueRouter from "vue-router";
+import App from "./App.vue";
+import router from "./router";
 
-Vue.config.productionTip = false
+Vue.use(VueRouter);
+
+// const router = new VueRouter({
+//   // Configure your routes here
+// });
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router,
+  render: (h) => h(App),
+}).$mount("#app");
